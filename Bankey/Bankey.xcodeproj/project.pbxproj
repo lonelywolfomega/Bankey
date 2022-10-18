@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EA7EBAC28FF273800B194F1 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA7EBAB28FF273800B194F1 /* OnboardingContainerViewController.swift */; };
 		8EDA165528FDC037009CFFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA165428FDC037009CFFC0 /* AppDelegate.swift */; };
 		8EDA165928FDC037009CFFC0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA165828FDC037009CFFC0 /* LoginViewController.swift */; };
 		8EDA165E28FDC038009CFFC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDA165D28FDC038009CFFC0 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8EA7EBAB28FF273800B194F1 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		8EDA165128FDC037009CFFC0 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDA165428FDC037009CFFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDA165828FDC037009CFFC0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8EA7EBAA28FF268500B194F1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8EA7EBAB28FF273800B194F1 /* OnboardingContainerViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		8EDA164828FDC037009CFFC0 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +64,9 @@
 		8EDA165328FDC037009CFFC0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				8EDA166828FDCAEF009CFFC0 /* Files */,
+				8EA7EBAA28FF268500B194F1 /* Onboarding */,
 				8EDA166B28FDCB73009CFFC0 /* Login */,
+				8EDA166828FDCAEF009CFFC0 /* Files */,
 				8EDA165428FDC037009CFFC0 /* AppDelegate.swift */,
 			);
 			path = Bankey;
@@ -153,6 +164,7 @@
 				8EDA166D28FDCBC5009CFFC0 /* LoginView.swift in Sources */,
 				8EDA165928FDC037009CFFC0 /* LoginViewController.swift in Sources */,
 				8EDA165528FDC037009CFFC0 /* AppDelegate.swift in Sources */,
+				8EA7EBAC28FF273800B194F1 /* OnboardingContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
