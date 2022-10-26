@@ -7,6 +7,8 @@
 
 import UIKit
 
+let appColor: UIColor = .systemTeal
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -14,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyViewController = DummyViewController()
+    let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
@@ -23,8 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
+        dummyViewController.logoutDelegate = self
         
-        window?.rootViewController = loginViewController
+        window?.rootViewController = mainViewController
         //window?.rootViewController = OnboardingContainerViewController()
         //window?.rootViewController = OnboardingViewController(heroImageName: "delorean", titleText: "Bankey is fster, easier to , and has a brand new look and feel that will make you feel like you are back in 1989.")
         
@@ -33,9 +38,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 }
 
+extension AppDelegate: LogoutDelegate{
+    func didLogout() {
+        setRootViewController(loginViewController)
+    }
+}
+
 extension AppDelegate: LoginViewControllerDelegate{
     func didLogin() {
-        setRootViewController(onboardingContainerViewController)
+        if LocalState.hasOnboarded{
+            setRootViewController(dummyViewController)
+        } else{
+            setRootViewController(onboardingContainerViewController)
+        }
     }
     
     
@@ -43,7 +58,8 @@ extension AppDelegate: LoginViewControllerDelegate{
 
 extension AppDelegate: OnboardingContainerViewControllerDelegate{
     func didFinishOnboarding() {
-        print("onboarding")
+        LocalState.hasOnboarded = true
+        setRootViewController(dummyViewController)
     }
     
 }
