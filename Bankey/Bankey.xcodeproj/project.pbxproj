@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2A0E7129191C890012A464 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7029191C890012A464 /* ProfileTests.swift */; };
+		8E2A0E7329191DCF0012A464 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7229191DCF0012A464 /* AccountTests.swift */; };
+		8E2A0E7529192C710012A464 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7429192C710012A464 /* SkeletonLoadable.swift */; };
+		8E2A0E7729192DB40012A464 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7629192DB40012A464 /* SkeletonCell.swift */; };
 		8E3190D8291246E000D9BBE3 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */; };
+		8E6E799329128E9B0084AD13 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E799229128E9A0084AD13 /* NSNotificationName.swift */; };
+		8E6E79952912915A0084AD13 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E79942912915A0084AD13 /* UITextField+SecureToggle.swift */; };
+		8E6E79982912D51D0084AD13 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E79972912D51D0084AD13 /* ShakeyBellView.swift */; };
+		8E6E799A2912EAF20084AD13 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E79992912EAF20084AD13 /* Date+Utils.swift */; };
+		8E6E799C2912EC070084AD13 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E799B2912EC070084AD13 /* AccountSummaryViewController+Networking.swift */; };
 		8E8A2CAF2910306C00E0A08C /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A2CAE2910306C00E0A08C /* AccountSummaryCell.swift */; };
 		8E8A2CB1291059C600E0A08C /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A2CB0291059C600E0A08C /* DecimalUtils.swift */; };
 		8E8A2CB329105A4500E0A08C /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A2CB229105A4500E0A08C /* CurrencyFormatter.swift */; };
@@ -38,7 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E2A0E7029191C890012A464 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		8E2A0E7229191DCF0012A464 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		8E2A0E7429192C710012A464 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		8E2A0E7629192DB40012A464 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		8E6E799229128E9A0084AD13 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		8E6E79942912915A0084AD13 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
+		8E6E79972912D51D0084AD13 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		8E6E79992912EAF20084AD13 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		8E6E799B2912EC070084AD13 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		8E8A2CAE2910306C00E0A08C /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		8E8A2CB0291059C600E0A08C /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		8E8A2CB229105A4500E0A08C /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
@@ -79,6 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E2A0E6E29191C3A0012A464 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8E2A0E6F29191C4D0012A464 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				8E2A0E7029191C890012A464 /* ProfileTests.swift */,
+				8E2A0E7229191DCF0012A464 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		8E6E79962912D4E00084AD13 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8E6E79972912D51D0084AD13 /* ShakeyBellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8E8A2CAC29102E5300E0A08C /* Header */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				8E8A2CAE2910306C00E0A08C /* AccountSummaryCell.swift */,
+				8E2A0E7429192C710012A464 /* SkeletonLoadable.swift */,
+				8E2A0E7629192DB40012A464 /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -103,6 +148,9 @@
 				8E93345329093A1000725538 /* UIViewController+Utils.swift */,
 				8E8A2CB0291059C600E0A08C /* DecimalUtils.swift */,
 				8E8A2CB229105A4500E0A08C /* CurrencyFormatter.swift */,
+				8E6E799229128E9A0084AD13 /* NSNotificationName.swift */,
+				8E6E79942912915A0084AD13 /* UITextField+SecureToggle.swift */,
+				8E6E79992912EAF20084AD13 /* Date+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -119,7 +167,8 @@
 		8EB69094291245C9000C6C4D /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */,
+				8E2A0E6F29191C4D0012A464 /* AccountSummary */,
+				8E2A0E6E29191C3A0012A464 /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -151,6 +200,7 @@
 				8EA7EBAA28FF268500B194F1 /* Onboarding */,
 				8EF57FE42909514600257837 /* AccountSummary */,
 				8E9334502909321D00725538 /* Utils */,
+				8E6E79962912D4E00084AD13 /* Components */,
 				8EDA166828FDCAEF009CFFC0 /* Files */,
 			);
 			path = Bankey;
@@ -180,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF57FE52909519900257837 /* AccountSummaryViewController.swift */,
+				8E6E799B2912EC070084AD13 /* AccountSummaryViewController+Networking.swift */,
 				8E8A2CAC29102E5300E0A08C /* Header */,
 				8E8A2CAD29102EF200E0A08C /* Cells */,
 			);
@@ -289,6 +340,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3190D8291246E000D9BBE3 /* CurrencyFormatterTests.swift in Sources */,
+				8E2A0E7329191DCF0012A464 /* AccountTests.swift in Sources */,
+				8E2A0E7129191C890012A464 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,19 +350,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E93345429093A1000725538 /* UIViewController+Utils.swift in Sources */,
+				8E2A0E7729192DB40012A464 /* SkeletonCell.swift in Sources */,
+				8E6E799A2912EAF20084AD13 /* Date+Utils.swift in Sources */,
 				8EDA166D28FDCBC5009CFFC0 /* LoginView.swift in Sources */,
 				8E9334522909323700725538 /* LocalState.swift in Sources */,
 				8EF57FE8290956BD00257837 /* AccountSummaryHeaderView.swift in Sources */,
+				8E6E79952912915A0084AD13 /* UITextField+SecureToggle.swift in Sources */,
 				8E93344F29092A9B00725538 /* DummyViewController.swift in Sources */,
 				8E8A2CB329105A4500E0A08C /* CurrencyFormatter.swift in Sources */,
 				8E8A2CB1291059C600E0A08C /* DecimalUtils.swift in Sources */,
+				8E6E799329128E9B0084AD13 /* NSNotificationName.swift in Sources */,
 				8EDA165928FDC037009CFFC0 /* LoginViewController.swift in Sources */,
+				8E6E79982912D51D0084AD13 /* ShakeyBellView.swift in Sources */,
 				8E8A2CAF2910306C00E0A08C /* AccountSummaryCell.swift in Sources */,
 				8ECEC30C28FFD5E0001597FE /* OnboardingViewController.swift in Sources */,
 				8E93345629093BD700725538 /* MainViewController.swift in Sources */,
 				8EF57FE62909519900257837 /* AccountSummaryViewController.swift in Sources */,
 				8EDA165528FDC037009CFFC0 /* AppDelegate.swift in Sources */,
 				8EA7EBAC28FF273800B194F1 /* OnboardingContainerViewController.swift in Sources */,
+				8E2A0E7529192C710012A464 /* SkeletonLoadable.swift in Sources */,
+				8E6E799C2912EC070084AD13 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
