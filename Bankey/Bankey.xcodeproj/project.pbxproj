@@ -11,6 +11,8 @@
 		8E2A0E7329191DCF0012A464 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7229191DCF0012A464 /* AccountTests.swift */; };
 		8E2A0E7529192C710012A464 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7429192C710012A464 /* SkeletonLoadable.swift */; };
 		8E2A0E7729192DB40012A464 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A0E7629192DB40012A464 /* SkeletonCell.swift */; };
+		8E2B4409291A5EAE004C1E4F /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B4408291A5EAE004C1E4F /* ProfileManager.swift */; };
+		8E2B440B291A74F0004C1E4F /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B440A291A74F0004C1E4F /* AccountSummaryViewControllerTests.swift */; };
 		8E3190D8291246E000D9BBE3 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */; };
 		8E6E799329128E9B0084AD13 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E799229128E9A0084AD13 /* NSNotificationName.swift */; };
 		8E6E79952912915A0084AD13 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E79942912915A0084AD13 /* UITextField+SecureToggle.swift */; };
@@ -51,6 +53,8 @@
 		8E2A0E7229191DCF0012A464 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		8E2A0E7429192C710012A464 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		8E2A0E7629192DB40012A464 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
+		8E2B4408291A5EAE004C1E4F /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		8E2B440A291A74F0004C1E4F /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		8E3190D7291246E000D9BBE3 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		8E6E799229128E9A0084AD13 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		8E6E79942912915A0084AD13 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
@@ -110,8 +114,17 @@
 			children = (
 				8E2A0E7029191C890012A464 /* ProfileTests.swift */,
 				8E2A0E7229191DCF0012A464 /* AccountTests.swift */,
+				8E2B440A291A74F0004C1E4F /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		8E2B4407291A5E0E004C1E4F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B4408291A5EAE004C1E4F /* ProfileManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		8E6E79962912D4E00084AD13 /* Components */ = {
@@ -233,6 +246,7 @@
 				8E6E799B2912EC070084AD13 /* AccountSummaryViewController+Networking.swift */,
 				8E8A2CAC29102E5300E0A08C /* Header */,
 				8E8A2CAD29102EF200E0A08C /* Cells */,
+				8E2B4407291A5E0E004C1E4F /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -342,6 +356,7 @@
 				8E3190D8291246E000D9BBE3 /* CurrencyFormatterTests.swift in Sources */,
 				8E2A0E7329191DCF0012A464 /* AccountTests.swift in Sources */,
 				8E2A0E7129191C890012A464 /* ProfileTests.swift in Sources */,
+				8E2B440B291A74F0004C1E4F /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +367,7 @@
 				8E93345429093A1000725538 /* UIViewController+Utils.swift in Sources */,
 				8E2A0E7729192DB40012A464 /* SkeletonCell.swift in Sources */,
 				8E6E799A2912EAF20084AD13 /* Date+Utils.swift in Sources */,
+				8E2B4409291A5EAE004C1E4F /* ProfileManager.swift in Sources */,
 				8EDA166D28FDCBC5009CFFC0 /* LoginView.swift in Sources */,
 				8E9334522909323700725538 /* LocalState.swift in Sources */,
 				8EF57FE8290956BD00257837 /* AccountSummaryHeaderView.swift in Sources */,
